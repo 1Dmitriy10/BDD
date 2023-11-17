@@ -28,7 +28,7 @@
     flex: 0 1 31.333%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     padding: 15px;
     gap: 20px;
@@ -44,6 +44,9 @@
 }
 .request__item_down {
     flex: 0 1 33%;
+    @media (max-width: 478px) {
+        flex: 1 1 100%;
+    }
 }
 .request__info-box {
     display: flex;
@@ -76,4 +79,13 @@
     line-height: 25px; /* 100% */
 }
 .request__info-img {
+}
+.img-wrap {
+    height: 174px;
+    @media (max-width: 1045px) {
+        height: 140px;
+    }
+    @media (max-width: 500px) {
+        height: 100px;
+    }
 }

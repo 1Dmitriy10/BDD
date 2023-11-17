@@ -29,6 +29,14 @@ body {
     font-weight: 400;
     line-height: 22.5px; /* 102.5% */
 }
+.img {
+    @media (max-width: 1045px) {
+        width: 140px;
+    }
+    @media (max-width: 500px) {
+        width: 100px;
+    }
+}
 
 @import "./blocks/main";
 @import "./blocks/request";
