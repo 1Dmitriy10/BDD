@@ -55,6 +55,11 @@ body {
   max-width: 860px;
   padding: 10px 20px;
 }
+@media (max-width: 1000px) {
+  .title {
+    width: 65%;
+  }
+}
 
 .text {
   color: #4f4f65;
@@ -107,6 +112,7 @@ body {
   .wrap-img {
     width: 80%;
     padding-bottom: 85.8369098712%;
+    margin-right: 0;
   }
 }
 
