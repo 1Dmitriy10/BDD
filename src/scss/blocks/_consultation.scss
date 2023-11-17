@@ -21,10 +21,11 @@
     position: relative;
     width: 37.5%;
     height: 0;
-    padding-bottom: prop(407, 1280);
+    padding-bottom: prop(450, 1280);
     @media (max-width: 932px) {
-        width: 80%;
-        padding-bottom: prop(800, 932);
+        width: 54%;
+        padding-bottom: prop(520, 932);
+        margin-right: 0;
     }
 }
 .consultation__list {
