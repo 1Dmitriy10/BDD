@@ -1,0 +1,62 @@
+.main {
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: in(1300, 30) 10px in(1300, 30) 10px;
+}
+.main__title {
+    margin-bottom: in(1300, 70);
+}
+.main__content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 932px) {
+        justify-content: center;
+    }
+}
+.wrap-img {
+    position: relative;
+    width: 37.5%;
+    height: 0;
+    padding-bottom: prop(521, 1280);
+    margin-right: 20px;
+    @media (max-width: 932px) {
+        width: 80%;
+        padding-bottom: prop(800, 932);
+    }
+}
+.main__list {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 550px;
+    @media (max-width: 932px) {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+}
+.main__list-item {
+    position: relative;
+    padding-left: 79px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        background: url("../img/marker-list.svg") 0 0 / cover no-repeat;
+        width: 45px;
+        height: 45px;
+    }
+    @media (max-width: 576px) {
+        padding-left: 30px;
+        &::before {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
