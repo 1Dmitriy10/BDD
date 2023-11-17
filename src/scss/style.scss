@@ -22,6 +22,9 @@ body {
     background: #e95a5a;
     max-width: 860px;
     padding: 10px 20px;
+    @media (max-width: 1000px) {
+        width: 65%;
+    }
 }
 .text {
     color: #4f4f65;
